@@ -136,18 +136,24 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header-contact-bg:hover {
+  fill: var(--btn-hover-background-color);
+  color: var(--btn-hover-background-color);
 }
 .header-contacts-list {
   display: flex;
   margin-left: auto;
   gap: 50px;
-  justify-content: start;
 }
-.header-contact {
+.header-contact-item {
   align-items: center;
-  display: inline-block;
+  display: flex;
 }
-
 /* ----------STUDIO PAGE MAIN----------  */
 .studio-main {
 }
@@ -488,6 +494,7 @@ body {
   height: 44px;
 }
 .footer-soc-link {
+  background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 100%;
   border-radius: 50%;
