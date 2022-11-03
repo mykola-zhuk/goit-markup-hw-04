@@ -129,7 +129,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-link-color);
 }
-.site-nav-contacts {
+.header-contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,9 +141,8 @@ body {
   align-items: center;
   gap: 10px;
 }
-.site-nav-contacts:hover,
-.site-nav-contacts:focus {
-  fill: var(--link-hover-color);
+.header-contact-icon {
+  fill: currentColor;
 }
 .header-contacts-list {
   display: flex;
@@ -220,9 +219,13 @@ body {
   color: var(--main-text-color);
 }
 .advantages-item-bg {
+  margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
+  display: flex;
+
   background: var(--btn-background-color);
   justify-content: center;
-  display: flex;
 }
 .advantages-list {
   display: flex;
@@ -311,19 +314,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--icon-main-color);
 }
 .team-soc-icon {
-  fill: var(--icon-main-color);
-}
-.team-soc-link:hover {
-  background-color: var(--btn-hover-background-color);
+  fill: currentColor;
 }
 .team-soc-link:hover,
-.team-soc-link:focus,
-.team-soc-icon:hover {
-  fill: var(--third-text-color);
+.team-soc-link:focus {
+  background-color: var(--link-hover-color);
+  color: var(--third-text-color);
 }
-
 /* ---------OUR CLIENTS----------*/
 .clients-container {
   display: flex;
@@ -352,17 +352,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.client-link {
+  color: var(--icon-main-color);
 }
 .client-icon {
-  fill: var(--icon-main-color);
+  fill: currentColor;
 }
-.client-icon:hover,
-.client-icon:focus {
-  fill: var(--link-hover-color);
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-background-color);
 }
-
 /*----------PORTFOLIO PAGE MAIN----------*/
 .filter {
   margin-bottom: 50px;
