@@ -141,9 +141,9 @@ body {
   align-items: center;
   gap: 10px;
 }
-.header-contact-bg:hover {
-  fill: var(--btn-hover-background-color);
-  color: var(--btn-hover-background-color);
+.site-nav-contacts:hover,
+.site-nav-contacts:focus {
+  fill: var(--link-hover-color);
 }
 .header-contacts-list {
   display: flex;
@@ -269,8 +269,11 @@ body {
 }
 .team-item {
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--third-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-member {
   margin-bottom: 10px;
@@ -308,24 +311,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--third-text-color);
-}
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--link-hover-color);
-}
-.team-soc-link:hover
-/* focus here????? */
-.team-soc-icon:hover {
-  fill: var(--third-text-color);
 }
 .team-soc-icon {
   fill: var(--icon-main-color);
 }
-.
+.team-soc-link:hover {
+  background-color: var(--btn-hover-background-color);
+}
+.team-soc-link:hover,
+.team-soc-link:focus,
+.team-soc-icon:hover {
+  fill: var(--third-text-color);
+}
+
 /* ---------OUR CLIENTS----------*/
 .clients-container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .clients-title {
   margin-bottom: 50px;
@@ -350,13 +353,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+.client-link {
+}
 .client-icon {
   fill: var(--icon-main-color);
 }
 .client-icon:hover,
-.client.icon:focus {
-  fill: var(--btn-hover-background-color);
+.client-icon:focus {
+  fill: var(--link-hover-color);
 }
+
 /*----------PORTFOLIO PAGE MAIN----------*/
 .filter {
   margin-bottom: 50px;
@@ -364,6 +370,7 @@ body {
   justify-content: center;
   gap: 8px;
 }
+
 .filter-btn {
   padding-left: 22px;
   padding-right: 22px;
@@ -494,7 +501,6 @@ body {
   height: 44px;
 }
 .footer-soc-link {
-  background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 100%;
   border-radius: 50%;
