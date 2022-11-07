@@ -224,6 +224,8 @@ body {
   align-items: center;
   display: flex;
 
+  border-radius: 4px;
+
   background: var(--btn-background-color);
   justify-content: center;
 }
@@ -271,8 +273,8 @@ body {
   background-color: var(--btn-background-color);
 }
 .team-item {
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
+  height: 428px;
 
   background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -290,7 +292,6 @@ body {
 }
 .team-position {
   text-align: center;
-  margin-bottom: 28px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -302,6 +303,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-top: 16px;
 }
 .team-soc-item {
   width: 44px;
@@ -418,8 +420,8 @@ body {
 }
 .project-description {
   padding: 20px 24px;
-  border-left: solid #eeeeee;
-  border-right: solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .project-title {
   font-size: 18px;
@@ -435,10 +437,12 @@ body {
 }
 /* ----------SITE FOOTER---------- */
 .footeer {
-  padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--second-background-color);
+}
+.footer-adress-container {
+  margin-top: 60px;
 }
 .footer-container {
   display: flex;
@@ -482,8 +486,10 @@ body {
   text-decoration: none;
 }
 .footer-soc-container {
+  margin-top: 72px;
   display: inline-block;
   width: 206px;
+  height: 80px;
 }
 .footer-soc-title {
   margin-bottom: 10px;
@@ -515,7 +521,8 @@ body {
 
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: var(--btn-hover-background-color);
 }
 .footer-soc-icon {
